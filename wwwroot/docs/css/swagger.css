@@ -1,0 +1,380 @@
+﻿html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar-track:hover {
+    border-radius: 15px;
+    background-color: transparent;
+}
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent
+}
+
+    html::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #6A2EA6;
+        background-image: -webkit-linear-gradient(90deg, transparent, #BF15A396 50%, transparent, transparent);
+    }
+.opblock-body pre::-webkit-scrollbar-track:hover {
+    border-radius: 15px;
+    background-color: transparent;
+}
+.opblock-body pre::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent
+}
+
+.opblock-body pre::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6A2EA6;
+    background-image: -webkit-linear-gradient(90deg, transparent, #BF15A396 50%, transparent, transparent);
+}
+
+
+    /*html::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+        border-radius: 10px;
+    }
+
+    html::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #143023;
+        background-image: -webkit-linear-gradient(90deg, transparent, #34153ca1 50%, transparent, transparent);
+    }*/
+
+.topbar {
+    display: none;
+}
+
+body {
+    display: none;
+}
+
+#operations-ApiBase-Ping {
+    display: none;
+}
+
+#logo {
+    float: left;
+    width: 220px;
+    height: 120px;
+    cursor: pointer;
+    cursor: hand;
+    background-image: url(images/anc.fw.png);
+    background-repeat: no-repeat;
+}
+
+#operations-tag-ApiBase {
+    display: none;
+}
+
+#operations-ApiBase-PingtestGet {
+    display: none;
+}
+
+.expand-operation {
+    display: none;
+}
+
+
+.swagger-ui .checkbox input[type=checkbox] {
+    display: none
+}
+
+.swagger-ui .Resizer.vertical.disabled {
+    display: none
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #02221e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+#main2 {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+.barra {
+    background-color: #02221e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 43px;
+}
+
+#home {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    background-color: #6A2EA6;
+    color: rgba(255, 255, 255, 0.5);
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    /*background-image: url("/docs/img/bggreen.jpg");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0;
+    display: -ms-flexbox;
+    height: 35rem !important;
+    min-height: 35rem;
+    overflow: hidden;
+    /*position: relative;*/
+    text-align: center;
+    width: 100%;
+}
+
+.menulogo {
+    max-height: 35px;
+    position: fixed;
+    top: 15px;
+    left: 2%;
+}
+
+
+
+.logoimg {
+    max-height: 45px;
+    position: relative;
+    top: -13px;
+    LEFT: -13px;
+}
+
+.clouseimg {
+    position: relative;
+    left: 70%;
+    top: 1px;
+}
+
+.fixmenu {
+    position: fixed;
+    left: 3%;
+    max-width: 18px;
+    top: 1.8%;
+}
+.fatree {
+    position: relative;
+    left: 5%;
+    top: 2px;
+}
+.fatree2 {
+    display:none;
+    position: relative;
+    left: 5%;
+    top: 2px;
+}
+
+#mySidenav {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    #mySidenav::-webkit-scrollbar-track:hover {
+       
+        border-radius: 15px;
+        background-color: transparent;
+    }
+
+    #mySidenav::-webkit-scrollbar {
+        width: 10px;
+        background-color: transparent
+    }
+
+    #mySidenav::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #6A2EA6;
+        background-image: -webkit-linear-gradient(90deg, transparent, #BF15A396 50%, transparent, transparent);
+        display: none;
+    }
+
+    #mySidenav::-webkit-scrollbar-thumb:hover {
+            display: block;
+            
+    }
+
+
+
+.treeview {
+    float: left;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+    .treeview:hover input ~ label:before,
+    .treeview.hover input ~ label:before {
+        opacity: 1;
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -ms-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+
+    .treeview ul {
+        -webkit-transition-duration: 1s;
+        -moz-transition-duration: 1s;
+        -ms-transition-duration: 1s;
+        -o-transition-duration: 1s;
+        transition-duration: 1s;
+        list-style: none;
+        padding-left: 1em;
+    }
+
+        .treeview ul li span {
+            -webkit-transition-property: color;
+            -moz-transition-property: color;
+            -ms-transition-property: color;
+            -o-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -ms-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+            .treeview ul li span:hover {
+                color: rgba(255, 255, 255, 0.9);
+                -webkit-transition-duration: 0.3s;
+                -moz-transition-duration: 0.3s;
+                -ms-transition-duration: 0.3s;
+                -o-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
+
+    .treeview input {
+        display: none;
+    }
+
+        .treeview input:checked ~ ul {
+            display: none;
+        }
+
+        .treeview input ~ label {
+            cursor: pointer;
+        }
+
+            .treeview input ~ label:before {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                margin-left: -1em;
+                margin-top: 0.4em;
+                border-width: 4px;
+                border-style: solid;
+                border-top-color: transparent;
+                border-right-color: rgba(255, 255, 255, 0.5);
+                border-bottom-color: rgba(255, 255, 255, 0.5);
+                border-left-color: transparent;
+                opacity: 0;
+                -webkit-transition-property: opacity;
+                -moz-transition-property: opacity;
+                -ms-transition-property: opacity;
+                -o-transition-property: opacity;
+                transition-property: opacity;
+                -webkit-transition-duration: 1s;
+                -moz-transition-duration: 1s;
+                -ms-transition-duration: 1s;
+                -o-transition-duration: 1s;
+                transition-duration: 1s;
+            }
+
+        .treeview input:checked ~ label:before {
+            margin-left: -0.8em;
+            border-width: 5px;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: rgba(255, 255, 255, 0.5);
+        }
+
+.imgtreevw {
+    position: relative;
+    left: 54%;
+    max-width: 15px;
+}
+
+.first {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.second {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.first, .second {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}

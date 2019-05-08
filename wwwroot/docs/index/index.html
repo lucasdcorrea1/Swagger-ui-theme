@@ -1,0 +1,156 @@
+﻿<a onclick="openNav()">
+    <img class="menulogo" src="./img/menu-button-of-three-horizontal-lines.png" />
+</a>
+<div class="scrollbar" id="style-13">
+    <div class="force-overflow">
+
+    </div>
+    <div id="mySidenav" class="header" role="banner">
+
+        <h1 class="logo">
+            <a style="max-width: 20px; visibility:hidden;" onclick="closeNav()" class="clouseimg">
+                <i class="fas fa-times"></i>
+            </a>
+            <a>
+                <img onclick="closeNav()" class="logoimg" src="./img/logo-net.png" />
+                <span style="text-transform: capitalize;" onclick="closeNav()" class="test">
+                    Swagger-ui
+                </span>
+            </a>
+        </h1>
+        <div class="nav-wrap">
+            <nav style="text-transform: capitalize" class="main-nav" role="navigation">
+                <div class="treeview hover">
+                    <ul class="unstyled list-hover-slide">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#operations-tag-Auth">Auth</a></li>
+                        <li>
+                            <input type="checkbox" id="cb-1">
+                            <label for="cb-1">
+                                <a>Clients<i id="fa" class="fas fa-angle-down fatree"></i></a>
+                            </label>
+                            <ul>
+                                <li>
+                                    <a href="#operations-tag-Clients">
+                                        Clients
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="#operations-tag-Clients_Products" id="CC">
+                                        Clients_Products
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="link" href="#operations-tag-Users_Clients">
+                                        Users_Clients
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#operations-tag-Products">Products</a></li>
+                        <li>
+                            <input type="checkbox" id="cb-2">
+                            <label for="cb-2">
+                                <a>Users<i id="fa" class="fas fa-angle-down fatree"></i></a>
+                            </label>
+                            <ul>
+                                <li>
+                                    <a href="#operations-tag-Users">
+                                        Users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="#operations-tag-Users_Clients" id="CC">
+                                        Users_Clients
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="#operations-tag-Users_Clients_Products" id="CC">
+                                        Users_Clients_Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="#operations-tag-Users_Log" id="CC">
+                                        Users_Log
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="visibility:hidden;">
+                            <ul style="visibility:hidden;" class="social-links list-inline unstyled list-hover-slide">
+                                <li><a href="" target="_blank">LUCASDAM</a></li>
+                                <li><a href="" target="_blank">Twitter</a></li>
+                                <li><a href="" target="_blank">Facebook</a></li>
+                                <li><a href="" target="_blank">Blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--swagger-->
+<div id="main2">
+    <div align="center" class="swagger-ui">
+        <div class="col-md-10">
+            <div id="dataLocal"></div>
+        </div>
+    </div>
+</div>
+<!--swagger Fim-->
+<!-- footer area start-->
+<footer id="main3" class="navscrol footer-distributed">
+
+    <div class="footer-left">
+        <h3><a href="https://www.instagram.com/lucas_damas_/" target="_blank"><img src="./img/logo-net.png" style="max-height:30px;" /></a></h3>
+        <p class="footer-links">
+            <a href="" target="_blank">Site company</a>
+            ·
+            <a href="" target="_blank">Blog</a>
+            ·
+            <a href="" target="_blank"></a>
+            ·
+            <a href="" target="_blank">Suporte</a>
+        </p>
+        <p class="footer-company-name">company name &copy; 2019</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Address</span> Brasil, Franca-SP</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+55 16 99461-6318</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:lucas.dcorrea1@gmail.com" target="_blank">lucas.dcorrea1@gmail.com</a></p>
+        </div>
+    </div>
+</footer>
+<!-- footer area end-->
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            var visivel = $('#operations-tag-Auth').is(':visible');
+            if (visivel) {
+            }
+            else {
+                location.reload();
+            }
+        }, 5);
+        checkedtrue();
+        var toggler = document.getElementsByClassName("caret");
+        var i;
+        for (i = 0; i < toggler.length; i++) {
+            toggler[i].addEventListener("click", function () {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+            });
+        }
+
+    });
+</script>
