@@ -3,21 +3,23 @@
 easy implementation template for swagger ui
 
 # Rota
-├── API
-     ├── wwwroot
-               └── docs
-                   ├── index
-                   ├── img
-                   ├── css
-                   ├── js
-
-            
         
 
 Startp.cs
 
     code 
-
+     
+    ├── API
+        ├── wwwroot
+                ├──docs
+                    ├──css
+                    ├──index        
+                    ├──js
+                    ├──img
+                    ├──favicon-16x16.png
+                    ├──favicon-32x32.png
+                    
+                    
         app.UseAuthentication();
         app.UseStaticFiles();
         app.UseHttpsRedirection();
