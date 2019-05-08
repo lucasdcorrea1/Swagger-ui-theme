@@ -4,14 +4,13 @@ easy implementation template for swagger ui
 
 # Rota
 ├── API
-    ├── wwwroot
-        ├──docs
-            ├──css
-            ├──index        
-            ├──js
-            ├──img
-            ├──favicon-16x16.png
-            ├──favicon-32x32.png
+     ├── wwwroot
+               └── docs
+                   ├── index
+                   ├── img
+                   ├── css
+                   ├── js
+
             
         
 
